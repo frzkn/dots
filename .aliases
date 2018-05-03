@@ -1,0 +1,7 @@
+alias data='/run/media/frzkn/Data'
+alias vim='/usr/bin/nvim'
+alias open='/usr/bin/dde-file-manager . &'
+alias pdf='/usr/bin/zathura'
+alias t='todo.sh'
+alias mapkeys='xmodmap  ~/.xmodmap'
+alias shrug="echo '¯\\_(ツ)_/¯'" 
