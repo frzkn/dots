@@ -1,0 +1,17 @@
+conky.config = {
+
+	background = false,
+	out_to_x = false,
+	out_to_console = true,
+	update_interval = 1,
+	total_run_times = 0,
+	use_spacer = 'none',
+};
+conky.text = [=[
+${exec xtitle -t20}   |   \
+   ${exec brightnessctl | grep "Current brightness: " | cut -d "(" -f2 | cut -d ")" -f1 }     \
+   ${exec amixer get Master | grep "Mono: Playback" | cut -d " " -f6 | cut -d "[" -f2 | cut -d "]" -f1
+}     \
+   ${exec acpi | cut -d "," -f 2}    |  \
+   ${time %a %b %d}   \
+   ${time %I:%M  }|]=];
