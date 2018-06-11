@@ -25,6 +25,8 @@ font pango:Ubuntu Nerd Font, FontAwesome 9
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# enable and disable touchpad
+bindsym $mod+Ctrl+comma exec /home/frzknix/.scripts/toggletouchpad
 # start a terminal
 bindsym $mod+Return exec terminal
 # start thunar
@@ -477,3 +479,5 @@ mode "$mode_gaps_outer" {
 }
 # Mod D to show MISC workspace
 bindsym $mod+d workspace $ws8
+
+
