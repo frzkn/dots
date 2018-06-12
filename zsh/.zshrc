@@ -1,9 +1,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/frzkn/.oh-my-zsh
-ZSH_THEME=""
+#ZSH_THEME=""
 POWERLEVEL9K_MODE='nerdfont-complete'
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -15,6 +15,7 @@ plugins=(
   extract
   cloudapp
   web-search
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -51,3 +52,13 @@ eval $(thefuck --alias)
 # Custom method to quit
 :q(){
 exit }
+# pywal configuration
+export PATH=$PATH:${HOME}/.local/bin
+export PATH=$PATH:${HOME}/.gem/ruby/2.5.0/bin
+#
+
+
+# termite config for pywal
+#cat ~/.cache/wal/sequences
+#source ~/.cache/wal/colors-tty.sh
+
